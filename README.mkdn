@@ -1,6 +1,6 @@
 # NAME
 
-VanessasListings - My Brand New Module
+VanessasListings - A Website to help manage listings
 
 # SYNOPSIS
 
@@ -8,19 +8,16 @@ VanessasListings - My Brand New Module
 
 # DESCRIPTION
 
-VanessasListings is ...
+A website used by Vanessa to create nice looking layouts for apartment listings
+that she is trying to advertise
 
 # AUTHOR
 
-John Napiorkowski L<email:jjnapiork@cpan.org>
-
-# SEE ALSO
-
-    TBD
+John Napiorkowski `<jjnapiork@cpan.org>` 
 
 # COPYRIGHT & LICENSE
 
-Copyright 2011, John Napiorkowski L<email:jjnapiork@cpan.org> 
+Copyright 2011, John Napiorkowski `<jjnapiork@cpan.org>`
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.

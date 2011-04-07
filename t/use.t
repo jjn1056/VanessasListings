@@ -1,5 +1,9 @@
-use strict;
-use warnings FATAL =>'all';
-use Test::More tests => 1;
+use Test::Most;
 
-BEGIN { use_ok 'VanessasListings' }
+BEGIN {
+  use_ok 'VanessasListings';
+  use_ok 'VanessasListings::Schema';
+}
+
+done_testing;
+
