@@ -1,6 +1,6 @@
-package OnlyInsults::Schema::Result::ListingAmenity;
+package VanessasListings::Schema::Result::ListingAmenity;
 
-use OnlyInsults::Schema::Candy;
+use VanessasListings::Schema::Candy;
 
 table 'listing_amenity';
 
@@ -22,7 +22,7 @@ belongs_to amenity => ('::Amenity', 'amenity_id');
 
 =head1 NAME
 
-OnlyInsults::Schema::Result::ListingAmenity - Listing to Amenity Join table.
+VanessasListings::Schema::Result::ListingAmenity - Listing to Amenity Join table.
 
 =head1 DESCRIPTION
 
@@ -34,10 +34,10 @@ This package defines the following methods.
 
 =head1 AUTHOR
 
-See L<OnlyInsults> for authorship information.
+See L<VanessasListings> for authorship information.
 
 =head1 COPYRIGHT & LICENSE
 
-See L<OnlyInsults> for rights information.
+See L<VanessasListings> for rights information.
 
 =cut

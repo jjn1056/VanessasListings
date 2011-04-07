@@ -1,6 +1,6 @@
-package VanessasListing::Schema::Result::Listing;
+package VanessasListings::Schema::Result::Listing;
 
-use VanessasListing::Schema::Candy;
+use VanessasListings::Schema::Candy;
 
 table 'listing';
 
@@ -49,7 +49,7 @@ column type_id => {
 
 belongs_to type => '::Type', 'type_id';
 
-column floors_id => {
+column floor_id => {
   data_type => 'varchar',
   size => 22,
 };
@@ -63,26 +63,20 @@ column unit_id => {
 
 belongs_to unit => '::Unit', 'unit_id';
 
-column listing_amenities_id => {
-  data_type => 'varchar',
-  size => 22,
-};
-
-has_many listing_amenities_rs => ('::ListingAmenity', 'listing_id');
-many_to_many amenities => ('listing_amenities_rs', 'amenity');
-
 column created => {
   data_type => 'datetime', 
   set_on_create => 1,
 };
 
 has_many image_rs => ('::Image',  'listing_id');
+has_many listing_amenities_rs => ('::ListingAmenity', 'listing_id');
+many_to_many amenities => ('listing_amenities_rs', 'amenity');
 
 1;
 
 =head1 NAME
 
-VanessasListing::Schema::Result::Listing - Information about a listing
+VanessasListings::Schema::Result::Listing - Information about a listing
 
 =head1 DESCRIPTION
 
@@ -110,32 +104,27 @@ this is text only.
 
 =head2 price_id
 
-refers to the L<VanessasListing::Schema::Result::Price> for this listing.
+refers to the L<VanessasListings::Schema::Result::Price> for this listing.
 
 =head2 bedroom_id
 
-refers to the L<VanessasListing::Schema::Result::Bedroom> for this listing.
+refers to the L<VanessasListings::Schema::Result::Bedroom> for this listing.
 
 =head2 bath_id
 
-refers to the L<VanessasListing::Schema::Result::Bath> for this listing.
+refers to the L<VanessasListings::Schema::Result::Bath> for this listing.
 
 =head2 type_id
 
-refers to the L<VanessasListing::Schema::Result::Type> for this listing.
+refers to the L<VanessasListings::Schema::Result::Type> for this listing.
 
 =head2 floor_id
 
-refers to the L<VanessasListing::Schema::Result::Floor> for this listing.
+refers to the L<VanessasListings::Schema::Result::Floor> for this listing.
 
 =head2 unit_id
 
-refers to the L<VanessasListing::Schema::Result::Unit> for this listing.
-
-=head2 listing_amenities_id
-
-refers to the L<VanessasListing::Schema::Result::ListingAmenity> for this 
-listing.  This is a bridge table in a m2m style relationship
+refers to the L<VanessasListings::Schema::Result::Unit> for this listing.
 
 =head2 created
 
@@ -147,10 +136,10 @@ This package defines the following methods.
 
 =head1 AUTHOR
 
-See L<VanessasListing> for authorship information.
+See L<VanessasListings> for authorship information.
 
 =head1 COPYRIGHT & LICENSE
 
-See L<VanessasListing> for rights information.
+See L<VanessasListings> for rights information.
 
 =cut

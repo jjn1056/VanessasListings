@@ -1,6 +1,6 @@
-package VanessasListing::Schema::Result::Floor;
+package VanessasListings::Schema::Result::Floor;
 
-use VanessasListing::Schema::Candy;
+use VanessasListings::Schema::Candy;
 
 table 'floor';
 
@@ -24,7 +24,7 @@ unique_constraint ['number_of'];
 
 =head1 NAME
 
-VanessasListing::Schema::Result::Floor - Information about a listing floors
+VanessasListings::Schema::Result::Floor - Information about a listing floors
 
 =head1 DESCRIPTION
 
@@ -49,10 +49,10 @@ This package defines the following methods.
 
 =head1 AUTHOR
 
-See L<VanessasListing> for authorship information.
+See L<VanessasListings> for authorship information.
 
 =head1 COPYRIGHT & LICENSE
 
-See L<VanessasListing> for rights information.
+See L<VanessasListings> for rights information.
 
 =cut

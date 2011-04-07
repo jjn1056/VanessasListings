@@ -1,7 +1,6 @@
-package VanessasListing::Schema::Result::Bedroom;
+package VanessasListings::Schema::Result::Bedroom;
 
-use VanessasListing::Schema::Candy;
-use Data::Money;
+use VanessasListings::Schema::Candy;
 
 table 'bedroom';
 
@@ -25,7 +24,7 @@ unique_constraint ['label'];
 
 =head1 NAME
 
-VanessasListing::Schema::Result::Bedroom - Information about a listing bedrooms
+VanessasListings::Schema::Result::Bedroom - Information about a listing bedrooms
 
 =head1 DESCRIPTION
 
@@ -50,10 +49,10 @@ This package defines the following methods.
 
 =head1 AUTHOR
 
-See L<VanessasListing> for authorship information.
+See L<VanessasListings> for authorship information.
 
 =head1 COPYRIGHT & LICENSE
 
-See L<VanessasListing> for rights information.
+See L<VanessasListings> for rights information.
 
 =cut

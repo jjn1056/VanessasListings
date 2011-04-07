@@ -1,4 +1,4 @@
-package VanessasListing::Schema::ResultSet;
+package VanessasListings::Schema::ResultSet;
 use parent 'DBIx::Class::ResultSet';
 
 __PACKAGE__->load_components(qw/
@@ -21,12 +21,12 @@ sub hri {
 
 =head1 NAME
 
-Freestock::Schema::ResultSet - A base ResultSet Class
+VanessasListings::Schema::ResultSet - A base ResultSet Class
 
 =head1 SYNOPSIS
 
-    package VanessasListing::Schema::ResultSet::User;
-    use parent 'VanessasListing::Schema::ResultSet';
+    package VanessasListings::Schema::ResultSet::User;
+    use parent 'VanessasListings::Schema::ResultSet';
 	
 =head1 DESCRIPTION
 
@@ -51,11 +51,11 @@ and fast dump of the current resultset data into a hash.
 
 =head1 AUTHOR
 
-See L<VanessasListing> for authorship information.
+See L<VanessasListings> for authorship information.
 
 =head1 COPYRIGHT & LICENSE
 
-See L<VanessasListing> for rights information.
+See L<VanessasListings> for rights information.
 
 =cut
 

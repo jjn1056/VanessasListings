@@ -1,6 +1,6 @@
-package VanessasListing::Schema::Result::Bath;
+package VanessasListings::Schema::Result::Bath;
 
-use VanessasListing::Schema::Candy;
+use VanessasListings::Schema::Candy;
 
 table 'bath';
 
@@ -24,7 +24,7 @@ unique_constraint ['number_of'];
 
 =head1 NAME
 
-VanessasListing::Schema::Result::Bath - Information about a listing baths
+VanessasListings::Schema::Result::Bath - Information about a listing baths
 
 =head1 DESCRIPTION
 
@@ -48,10 +48,10 @@ This package defines the following methods.
 
 =head1 AUTHOR
 
-See L<VanessasListing> for authorship information.
+See L<VanessasListings> for authorship information.
 
 =head1 COPYRIGHT & LICENSE
 
-See L<VanessasListing> for rights information.
+See L<VanessasListings> for rights information.
 
 =cut

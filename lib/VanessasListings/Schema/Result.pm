@@ -1,4 +1,4 @@
-package VanessasListing::Schema::Result;
+package VanessasListings::Schema::Result;
 use parent 'DBIx::Class::Core';
 
 __PACKAGE__->load_components(qw/
@@ -12,7 +12,7 @@ __PACKAGE__->load_components(qw/
   /);
 
 
-sub default_result_namespace { 'VanessasListing::Schema::Result' }
+sub default_result_namespace { 'VanessasListings::Schema::Result' }
 
 sub insert {
   my $self = shift;
@@ -27,12 +27,12 @@ sub insert {
 
 =head1 NAME
 
-VanessasListing::Schema::Result - The base result class
+VanessasListings::Schema::Result - The base result class
 
 =head1 SYNOPSIS
 
-	package VanessasListing::Schema::Result::User;
-    use parent 'VanessasListing::Schema::Result';
+	package VanessasListings::Schema::Result::User;
+    use parent 'VanessasListings::Schema::Result';
 	
 =head1 DESCRIPTION
 
@@ -60,11 +60,11 @@ that gets prepended in relationships class names.
 
 =head1 AUTHOR
 
-See L<VanessasListing> for authorship information.
+See L<VanessasListings> for authorship information.
 
 =head1 COPYRIGHT & LICENSE
 
-See L<VanessasListing> for rights information.
+See L<VanessasListings> for rights information.
 
 =cut
 

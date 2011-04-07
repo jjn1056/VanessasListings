@@ -1,6 +1,6 @@
-package VanessasListing::Schema::Result::Type;
+package VanessasListings::Schema::Result::Type;
 
-use VanessasListing::Schema::Candy;
+use VanessasListings::Schema::Candy;
 
 table 'type';
 
@@ -24,7 +24,7 @@ unique_constraint ['label'];
 
 =head1 NAME
 
-VanessasListing::Schema::Result::Type - Information about a listing types
+VanessasListings::Schema::Result::Type - Information about a listing types
 
 =head1 DESCRIPTION
 
@@ -48,10 +48,10 @@ This package defines the following methods.
 
 =head1 AUTHOR
 
-See L<VanessasListing> for authorship information.
+See L<VanessasListings> for authorship information.
 
 =head1 COPYRIGHT & LICENSE
 
-See L<VanessasListing> for rights information.
+See L<VanessasListings> for rights information.
 
 =cut

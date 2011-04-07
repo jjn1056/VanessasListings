@@ -1,6 +1,6 @@
-package VanessasListing::Schema::Result::Image;
+package VanessasListings::Schema::Result::Image;
 
-use VanessasListing::Schema::Candy;
+use VanessasListings::Schema::Candy;
 
 table 'image';
 
@@ -31,7 +31,7 @@ column created => {
 
 =head1 NAME
 
-VanessasListing::Schema::Result::Image - Information about a listing images
+VanessasListings::Schema::Result::Image - Information about a listing images
 
 =head1 DESCRIPTION
 
@@ -65,10 +65,10 @@ This package defines the following methods.
 
 =head1 AUTHOR
 
-See L<VanessasListing> for authorship information.
+See L<VanessasListings> for authorship information.
 
 =head1 COPYRIGHT & LICENSE
 
-See L<VanessasListing> for rights information.
+See L<VanessasListings> for rights information.
 
 =cut

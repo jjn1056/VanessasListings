@@ -1,8 +1,8 @@
-package VanessasListing::Schema::Result::Price;
+package VanessasListings::Schema::Result::Price;
 
-use VanessasListing::Schema::Candy;
-use Data::Money;
+use VanessasListings::Schema::Candy;
 use syntax 'function';
+use Data::Money;
 
 table 'price';
 
@@ -26,7 +26,7 @@ inflate_column amount => {
     Data::Money->new(value=>$value/100);
   },
   deflate => fun($money_ob) {
-    $money_ob->to_int;
+    $money_ob->as_int;
   },
 };
 
@@ -34,7 +34,7 @@ inflate_column amount => {
 
 =head1 NAME
 
-VanessasListing::Schema::Result::Price - Information about a listing price
+VanessasListings::Schema::Result::Price - Information about a listing price
 
 =head1 DESCRIPTION
 
@@ -58,10 +58,10 @@ This package defines the following methods.
 
 =head1 AUTHOR
 
-See L<VanessasListing> for authorship information.
+See L<VanessasListings> for authorship information.
 
 =head1 COPYRIGHT & LICENSE
 
-See L<VanessasListing> for rights information.
+See L<VanessasListings> for rights information.
 
 =cut

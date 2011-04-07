@@ -1,20 +1,21 @@
-package VanessasListing::Schema::Result::Amenity;
+package VanessasListings::Schema::Result::Amenity;
 
-use VanessasListing::Schema::Candy;
+use VanessasListings::Schema::Candy;
 
 table 'amenity';
 
 column amenity_id => {
-  data_amenity => 'varchar',
+  data_type => 'varchar',
   size => 22,
 };
 
 primary_key 'amenity_id';
 
-has_many listing_rs => ('::Listing', 'amenity_id');
+has_many listings_amenity_rs => ('::ListingAmenity', 'amenity_id');
+many_to_many amenities => ('listings_amenity_rs', 'listing');
 
 column label => {
-  data_amenity => 'varchar',
+  data_type => 'varchar',
   size => 24,
 };
 
@@ -24,7 +25,7 @@ unique_constraint ['label'];
 
 =head1 NAME
 
-VanessasListing::Schema::Result::Amenity - Information about a listing amenitys
+VanessasListings::Schema::Result::Amenity - Information about a listing amenitys
 
 =head1 DESCRIPTION
 
@@ -48,10 +49,10 @@ This package defines the following methods.
 
 =head1 AUTHOR
 
-See L<VanessasListing> for authorship information.
+See L<VanessasListings> for authorship information.
 
 =head1 COPYRIGHT & LICENSE
 
-See L<VanessasListing> for rights information.
+See L<VanessasListings> for rights information.
 
 =cut

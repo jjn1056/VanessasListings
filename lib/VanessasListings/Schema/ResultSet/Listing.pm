@@ -1,11 +1,11 @@
-package VanessasListing::Schema::ResultSet::Listing;
-use parent 'VanessasListing::Schema::ResultSet';
+package VanessasListings::Schema::ResultSet::Listing;
+use parent 'VanessasListings::Schema::ResultSet';
 
 1;
 
 =head1 NAME
 
-VanessasListing::Schema::ResultSet::Listing - Set Methods on Listing 
+VanessasListings::Schema::ResultSet::Listing - Set Methods on Listing 
 
 =head1 DESCRIPTION
 
@@ -17,11 +17,11 @@ This package defines the following methods.
 
 =head1 AUTHOR
 
-See L<VanessasListing> for authorship information.
+See L<VanessasListings> for authorship information.
 
 =head1 COPYRIGHT & LICENSE
 
-See L<VanessasListing> for rights information.
+See L<VanessasListings> for rights information.
 
 =cut
 

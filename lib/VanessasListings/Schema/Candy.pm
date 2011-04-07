@@ -1,18 +1,18 @@
-package VanessasListing::Schema::Candy;
+package VanessasListings::Schema::Candy;
 use parent 'DBIx::Class::Candy';
 
-sub base { $_[1] || 'VanessasListing::Schema::Result' }
+sub base { $_[1] || 'VanessasListings::Schema::Result' }
 
 1;
 
 =head1 NAME
 
-VanessasListing::Schema::Candy - My Candy Class
+VanessasListings::Schema::Candy - My Candy Class
 
 =head1 SYNOPSIS
 
-	package VanessasListing::Schema::Result::User;
-    use VanessasListing::Schema::Candy;;
+	package VanessasListings::Schema::Result::User;
+    use VanessasListings::Schema::Candy;;
 	
 =head1 DESCRIPTION
 
@@ -28,11 +28,11 @@ Sets the base class for all Resukts
 
 =head1 AUTHOR
 
-See L<VanessasListing> for authorship information.
+See L<VanessasListings> for authorship information.
 
 =head1 COPYRIGHT & LICENSE
 
-See L<VanessasListing> for rights information.
+See L<VanessasListings> for rights information.
 
 =cut
 

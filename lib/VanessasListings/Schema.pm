@@ -1,26 +1,26 @@
-package VanessasListing::Schema;
+package VanessasListings::Schema;
 use parent 'DBIx::Class::Schema';
 
 our $VERSION = 1;
 
 use Data::UUID::Base64URLSafe;
 
+my $ug = Data::UUID::Base64URLSafe->new;
+sub uuid { $ug->create_b64_urlsafe }
+
 __PACKAGE__->load_namespaces(
   default_resultset_class => 'DefaultRS',
 );
-
-my $ug = Data::UUID::Base64URLSafe->new;
-sub uuid { $ug->create_b64_urlsafe }
 
 1;
 
 =head1 NAME
 
-VanessasListing::Schema - Root Schema logic and ORM management
+VanessasListings::Schema - Root Schema logic and ORM management
 
 =head2 SYNOPSIS
 
-	my $schema = VanessasListing::Schema->connect($dsn);
+	my $schema = VanessasListings::Schema->connect($dsn);
     my $rs = $schema->resultset('User');
 
 =head1 DESCRIPTION
@@ -40,10 +40,10 @@ Creates a condensed, 22 character UUID suitable for use in PK.
 
 =head1 AUTHOR
 
-See L<VanessasListing> for authorship information.
+See L<VanessasListings> for authorship information.
 
 =head1 COPYRIGHT & LICENSE
 
-See L<VanessasListing> for rights information.
+See L<VanessasListings> for rights information.
 
 =cut
