@@ -18,7 +18,7 @@ after 'BUILD', sub {
     floor => { number_of => 5 },
     unit => { number_of => 6 },
     listing_amenities_rs => [
-      map { +{amenity => {label=>$_} } } 
+      map { +{amenity => {label=>$_}} } 
         ('Dog Friendly', 'Doorman'), 
     ],
     image_rs => [
