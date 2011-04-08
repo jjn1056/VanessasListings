@@ -9,6 +9,7 @@ ok my $bath = Bath->create({number_of=>10}),
 
 ok my $listing = Listing->create({
   web_number => '111',
+  title => 'My Awesome New Listing',
   comments => 'Awesome new site',
   price => { amount => Data::Money->new(value=>100) },
   bedroom => { label => 'Studio' },
@@ -19,6 +20,10 @@ ok my $listing = Listing->create({
   listing_amenities_rs => [
     map { +{amenity => {label=>$_} } } 
       ('Dog Friendly', 'Doorman'), 
+  ],
+  image_rs => [
+    {comments => "A nice picture"},
+    {comments => "Another nice picture"},
   ],
 }), 'Created a Listing';
 

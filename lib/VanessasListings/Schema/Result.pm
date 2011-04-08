@@ -14,10 +14,15 @@ __PACKAGE__->load_components(qw/
 
 sub default_result_namespace { 'VanessasListings::Schema::Result' }
 
+use Data::UUID::Base64URLSafe;
+
+my $ug = Data::UUID::Base64URLSafe->new;
+sub uuid { $ug->create_b64_urlsafe }
+
 sub insert {
   my $self = shift;
   for my $column ($self->primary_columns) {
-    $self->store_column($column, $self->result_source->schema->uuid)
+    $self->store_column($column, $self->uuid)
       unless defined $self->get_column($column);
   }
   $self->next::method(@_);

@@ -17,6 +17,11 @@ column web_number => {
 
 unique_constraint ['web_number'];
 
+column title => {
+  data_type => 'varchar',
+  size => 60,
+};
+
 column comments => {
   data_type => 'text',
 };
