@@ -25,6 +25,7 @@ ok my $listing = Listing->create({
     {comments => "A nice picture"},
     {comments => "Another nice picture"},
   ],
-}), 'Created a Listing';
+})
+, 'Created a Listing';
 
 done_testing;
